@@ -1,0 +1,8 @@
+<div *ngFor="let recipe of recipes">
+  {{recipe.name}}
+
+  <div *ngFor="let dish of recipe?.dishes">
+    {{dish.name}}
+
+  </div>
+</div>
