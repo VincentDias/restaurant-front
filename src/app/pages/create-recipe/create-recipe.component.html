@@ -1,0 +1,9 @@
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+
+  <input name="name" type="text" [(ngModel)]="recipe.name">
+
+  <button type="submit" [disabled]="!form.form.valid">
+    Save
+  </button>
+
+</form>
